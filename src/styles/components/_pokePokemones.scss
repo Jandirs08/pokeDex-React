@@ -10,8 +10,9 @@
   grid-auto-rows: minmax(150px, auto);
   align-items: start;
   gap: 2.5rem;
-  padding: 4rem 16rem;
+  padding: 4rem 0;
   justify-content: center;
+  //   width: 40vw;
   //   align-items: center;
 
   //   background-color: lighten($color: $background, $amount: 60);
@@ -38,6 +39,7 @@
   .card__grid {
     grid-template-columns: 0.5fr 0.5fr;
     gap: 2.5rem;
+    width: 100vw;
   }
   .button-up {
     //display: none;
@@ -56,6 +58,8 @@
   .card__grid {
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 2.5rem;
+    width: 100vw;
+    padding: 4rem 16rem;
   }
   .button-up {
     //display: none;
