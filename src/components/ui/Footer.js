@@ -14,7 +14,7 @@ const Footer = () => {
       <a
         className="view-code"
         target="_blank"
-        href="https://github.com/Jandirs08/pokeDex.git"
+        // href="https://github.com/Jandirs08/pokeDex.git"
       >
         View code on Github
         <i class="fa-brands fa-github"></i>

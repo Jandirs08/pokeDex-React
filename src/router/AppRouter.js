@@ -9,7 +9,6 @@ import { Search } from "../components/search/Search";
 
 import NavbarPoke from "../components/ui/NavbarPoke";
 import { NotFound } from "../components/ui/NotFound";
-import { PublicRoute } from "./PublicRoute";
 
 export const AppRouter = () => {
   return (
