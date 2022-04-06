@@ -8,6 +8,7 @@ import { PokeDetailsStats } from "./PokeDetailsStats";
 import { useLocation } from "react-router-dom";
 import api from "../../services/api";
 import { Loading } from "./Loading";
+import Footer from "../ui/Footer";
 
 export const PokeDetails = () => {
   const { pokeName } = useParams();
@@ -62,24 +63,27 @@ export const PokeDetails = () => {
   }
   console.log(pokemons);
   return (
-    <div className="details">
-      {pokemons.length === 0 ? (
-        <Loading />
-      ) : (
-        <>
-          <PokeDetailsImage
-            avatar={pokemons[0].avatar}
-            name={pokemons[0].name}
-            types={pokemons[0].types}
-          />
-          <PokeDetailsInfo pokemons={pokemons} />
-          <PokeDetailsStats
-            stats={pokemons[0].stats}
-            types={pokemons[0].types}
-          />
-          <PokeDetailsEvo data={pokemons[0].data} types={pokemons[0].types} />
-        </>
-      )}
-    </div>
+    <>
+      <div className="details">
+        {pokemons.length === 0 ? (
+          <Loading />
+        ) : (
+          <>
+            <PokeDetailsImage
+              avatar={pokemons[0].avatar}
+              name={pokemons[0].name}
+              types={pokemons[0].types}
+            />
+            <PokeDetailsInfo pokemons={pokemons} />
+            <PokeDetailsStats
+              stats={pokemons[0].stats}
+              types={pokemons[0].types}
+            />
+            <PokeDetailsEvo data={pokemons[0].data} types={pokemons[0].types} />
+          </>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 };
