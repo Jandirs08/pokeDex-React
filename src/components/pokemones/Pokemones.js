@@ -30,6 +30,7 @@ export const Pokemones = () => {
   const [pokemons, setPokemons] = useState([]);
   const [message, setMessage] = useState("");
   const [isLoading, setLoading] = useState(true);
+  const [buttonUp, setButtonUp] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,25 +47,19 @@ export const Pokemones = () => {
       setPokemons([...pokemons, ...newPokemons]);
     });
   };
-  //   window.onscroll = () => {
-  //     if (pokemons.length > 1000) {
-  //       setMessage("Reached end of the list!!");
-  //       console.log("fin de la lista");
-  //       return;
-  //     }
-  //     if (
-  //       window.innerHeight + document.documentElement.scrollTop ===
-  //       document.documentElement.offsetHeight
-  //     ) {
-  //       setMessage("Loading...ESPERA");
-  //       setLoading(true);
-  //       console.log("Cargando");
-  //       fetchPokemonData(pokemons.length).then((newPokemons) => {
-  //         setPokemons([...pokemons, ...newPokemons]);
-  //         setLoading(false);
-  //       });
-  //     }
-  //   };
+
+  const up = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const checkScrollTop = () => {
+    if (!buttonUp && window.pageYOffset > 400) {
+      setButtonUp(true);
+    } else if (buttonUp && window.pageYOffset <= 400) {
+      setButtonUp(false);
+    }
+  };
+  window.addEventListener("scroll", checkScrollTop);
+
   return (
     <>
       {/* <div className="card__grid"> */}
@@ -86,12 +81,19 @@ export const Pokemones = () => {
               </p>
             }
           >
+            <i
+              className="fa-solid fa-up-long button-up"
+              onClick={up}
+              style={{ display: buttonUp ? "flex" : "none" }}
+            ></i>
             {pokemons.map((el, index) => (
               <>
                 <PokeCard key={el.id} el={el} />
+
                 {/* <Footer /> */}
               </>
             ))}
+
             <Footer />
           </InfiniteScroll>
         )}
