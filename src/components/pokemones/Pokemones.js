@@ -82,7 +82,7 @@ export const Pokemones = () => {
             }
           >
             <i
-              className="fa-solid fa-up-long button-up"
+              className="fa-solid fa-angles-up button-up"
               onClick={up}
               style={{ display: buttonUp ? "flex" : "none" }}
             ></i>
