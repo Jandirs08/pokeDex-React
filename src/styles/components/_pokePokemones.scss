@@ -1,0 +1,35 @@
+.nav-poke {
+  background-color: #212529;
+  * > {
+    color: white;
+  }
+}
+.card__grid {
+  display: grid;
+  //   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-auto-rows: minmax(150px, auto);
+  align-items: start;
+  gap: 2.5rem;
+  padding: 4rem 16rem;
+  justify-content: center;
+  //   align-items: center;
+
+  //   background-color: lighten($color: $background, $amount: 60);
+  background-color: #171717;
+  //   justify-items: center;
+}
+@media screen and (min-width: 800px) {
+  .card__grid {
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 2.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card__grid {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 2.5rem;
+  }
+}
+.container-fluid {
+  max-width: 1144px;
+}

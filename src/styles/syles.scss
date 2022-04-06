@@ -1,0 +1,26 @@
+@import "./base/settings";
+@import "./base/base";
+
+//components
+@import "./components/auth";
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/journal";
+@import "./components/nothing";
+@import "./components/notes";
+@import "./components/pokePokemones";
+@import "./components/pokeCards";
+@import "./components/pokeDetails";
+@import "./components/pokeDetailsInfo";
+@import "./components/pokeDetailsImage";
+@import "./components/pokeDetailsStats";
+@import "./components/pokeDetailsEvo";
+@import "./components/pokeSearch";
+@import "./components/pokeSearchForm";
+@import "./components/pokeSearchResults";
+@import "./components/loading";
+@import "./components/messageNotFound";
+@import "./components/nav";
+@import "./components/pokeModal";
+@import "./components/pokeFooter";
+@import "./components/pokeNotFound";

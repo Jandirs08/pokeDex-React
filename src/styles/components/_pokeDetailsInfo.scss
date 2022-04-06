@@ -1,0 +1,24 @@
+.details {
+  padding: 2rem;
+}
+.info__flex {
+  padding: 5rem;
+  justify-content: space-between;
+  display: flex;
+  gap: 1rem;
+  color: $white;
+
+  flex-wrap: wrap;
+  div {
+    flex-basis: calc(50% - 1rem);
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+hr {
+  width: 90%;
+}

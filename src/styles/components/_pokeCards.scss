@@ -1,0 +1,44 @@
+.card__pokemon {
+  //background-color:;
+  //lighten($color:;
+  //$background,$amount: 40);
+  background-color: $background-sec;
+  padding: 1rem;
+  color: $white;
+  border-radius: 12px;
+}
+.card__name {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.animation-up-down {
+  animation: updown 1.5s ease infinite;
+  -webkit-animation: updown 1.5s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.btn-information {
+  width: 100%;
+}
+// .btn-information:hover {
+//   background-color: red;
+// }
+a {
+  text-decoration: none;
+}
+.btn-information span {
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}

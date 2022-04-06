@@ -1,0 +1,138 @@
+* {
+  //   font-family: Helvetica, Arial, sans-serif;
+  //   font-family: "Raleway", sans-serif;
+  //   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quicksand", cursive;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  box-sizing: border-box;
+  /* ! 1 rem = 10px */
+  font-size: 62.5%;
+  letter-spacing: 1.3px;
+}
+.prueba {
+  background-color: $dark-grey;
+  color: white;
+  height: 100vh;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+main {
+  width: 100%;
+}
+.mt-1 {
+  margin-top: 5px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.mb-1 {
+  margin-bottom: 5px;
+}
+.mb-5 {
+  margin-bottom: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.grass {
+  background-color: $grass;
+  color: white;
+}
+.poison {
+  background-color: $poison;
+  color: white;
+}
+.water {
+  background-color: $water;
+  color: white;
+}
+.fire {
+  background-color: $fire;
+  color: white;
+}
+.flying {
+  background-color: $flying;
+  color: white;
+}
+.bug {
+  background-color: $bug;
+  color: white;
+}
+.ghost {
+  background-color: $ghost;
+  color: rgb(69, 69, 69);
+}
+.normal {
+  background-color: $normal;
+  color: white;
+}
+.electric {
+  background-color: $ground;
+  color: white;
+}
+.fairy {
+  background-color: $fairy;
+  color: white;
+}
+.dark {
+  background-color: $darkk;
+  color: white;
+}
+.rock {
+  background-color: $rock;
+  color: white;
+}
+.ice {
+  background-color: $ice;
+  color: white;
+}
+
+.text-grass {
+  color: $grass;
+}
+.text-poison {
+  color: $poison;
+}
+.text-water {
+  color: $water;
+}
+.text-fire {
+  color: $fire;
+}
+.text-flying {
+  color: $flying;
+}
+.text-bug {
+  color: $bug;
+}
+.text-normal {
+  color: $normal;
+}
+.text-electric {
+  color: $ground;
+}
+.text-fairy {
+  color: $fairy;
+}
+
+.default {
+  background-color: $default;
+  color: white;
+}
+a {
+  outline: none;
+}
