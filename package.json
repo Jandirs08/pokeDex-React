@@ -1,5 +1,6 @@
 {
   "name": "react-pokemon",
+  "homepage": "https://Jandirs08.github.io/pokeDex-React",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
